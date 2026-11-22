@@ -1,0 +1,11 @@
+# Copy this file to local.properties (gitignored) and fill in values locally.
+# Never commit local.properties.
+#
+# sdk.dir is normally written by Android Studio.
+# sdk.dir=/path/to/Android/sdk
+#
+# Your own key from the Presage Developer Portal. Leave empty (or delete the line)
+# for a keyless, timer-only build. You can also set the PRESAGE_API_KEY
+# environment variable instead of using this file.
+# A key built into an APK may be extractable; it is not secure. Never share a keyed APK.
+PRESAGE_API_KEY=YOUR_PRESAGE_API_KEY_HERE

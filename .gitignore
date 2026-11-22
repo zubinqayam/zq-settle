@@ -1,0 +1,50 @@
+# Build outputs and IDE state
+.gradle/
+build/
+**/build/
+.idea/
+*.iml
+.kotlin/
+.externalNativeBuild/
+.cxx/
+out/
+gen/
+captures/
+**/captures/
+
+# Local configuration and secrets (never commit)
+local.properties
+secrets.properties
+*.env
+.env
+.env.*
+!local.properties.example
+
+# Keys, keystores and signing material
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+
+# Packaged apps and generated outputs
+*.apk
+*.aab
+*.apks
+*.idsig
+output-metadata.json
+*.hprof
+
+# Logs and device evidence
+logs/
+*.log
+netstats*.txt
+
+# App data exports / backups
+*.cpb
+*.pb
+*-export.json
+
+# OS files
+.DS_Store
+Thumbs.db

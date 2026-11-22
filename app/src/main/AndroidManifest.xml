@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Challenge build: camera for SmartSpectra; INTERNET required by the SDK for auth.
+         Optional SDK telemetry is turned off in code (enableTelemetry = false). -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <!-- allowBackup=false: no automatic Google/system cloud backup. -->
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboard|keyboardHidden|navigation|uiMode|density|fontScale|locale|layoutDirection"
+            android:windowSoftInputMode="adjustResize">
+            <!-- 0.2.0: rotation and other configuration changes no longer recreate the activity, so the
+                 current step, its timer and the camera session continue (Compose recomposes in place).
+                 Process death still returns to Home; see logs/WORKLOG.md. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 0.1.2: stop the SmartSpectra SDK from auto-initialising at process start (androidx.startup).
+             ZQ Settle initialises it lazily, only after consent + granted camera permission + a configured key
+             (SmartSpectraHeartRateSource.ensureInitialized via AppInitializer). -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="com.presagetech.smartspectra.SmartSpectraInitializer"
+                tools:node="remove" />
+        </provider>
+    </application>
+</manifest>

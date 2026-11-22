@@ -1,0 +1,19 @@
+ZQ Settle
+Copyright 2026 Zubin Qayam
+
+This product includes original ZQ Settle source code licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+The Apache License 2.0 in this repository covers only the original ZQ Settle
+source code. It does NOT apply to the Presage SmartSpectra SDK or to any other
+third-party dependency (including AndroidX, Jetpack Compose, CameraX, Kotlin
+libraries and the Gradle wrapper files). Those components are not
+redistributed under this licence; they are obtained separately at build time
+or are included under, and remain subject to, their own licences and terms.
+
+The Presage SmartSpectra SDK (com.presagetech:smartspectra) is downloaded at
+build time and is governed by Presage Technologies' own licence, terms of use
+and privacy policy. Use of the SDK requires your own Presage API key.
+
+ZQ Settle is a personal preparation tool. It is not a medical device and does
+not diagnose, treat, monitor or assess any health condition.
