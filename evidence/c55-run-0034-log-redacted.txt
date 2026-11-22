@@ -1,0 +1,73 @@
+# ZQ Settle — C55 redo run log, 23 Nov 2026 00:34 (redacted)
+#
+# Device: Realme RMX3710 (realme C55), Android 15. Build: com.zq.commprep 0.2.0-prep2-fpsgate-lowres,
+# versionCode 8 (same arm64 build as the 22 Nov 23:47 run). Times are Asia/Muscat (UTC+4).
+#
+# Source (file-verified): full logcat captured on the developer laptop during the run
+#   (c55-redo-0033-full.txt, ~24.4 MB). Only lines with log tag SETTLE_SDK were extracted
+#   (48 lines). Nothing else from the full logcat is included.
+# Redaction: the extracted lines contained no Presage API key, no key-like tokens and no
+#   device serial (scan applied; no substitutions were needed). No camera frames are included.
+#
+# Notes:
+# - The first 3 lines (11-23 00:32:22, PID 30291) are the stop record of the EARLIER app process
+#   (the 00:29 Quiet-baseline attempt), written when the app was closed before the redo. Its
+#   SDK session was already IDLE; stop_failed is the SDK refusing a stop on an idle session.
+#   The rest of that 00:29 session's log was not captured.
+# - The redo session is PID 22628: start_requested 00:34:26.692, RUNNING 00:34:30.725,
+#   stop_requested 00:35:56.596 (85.9 s RUNNING), IDLE 00:35:57.996.
+# - pulseSamples was 0 at 00:34:56.072 and 2 at 00:35:05.154, so the first pulse arrived in that
+#   window: about 51–60 s of pulse before stop_requested (roughly 56 s). This does NOT meet the
+#   60 s continuous-pulse bar on its own. Pulse samples rose 2, 3, 10, 16, 23, 30, 35, 36.
+# - cameraFps windows 24.0–25.0 (FRAME_RATE_TOO_LOW warning throughout); early NO_FACE_FOUND,
+#   EXCESSIVE_MOTION and one MULTIPLE_FACES_FOUND (00:34:58.577). No crash, NETWORK_ERROR or
+#   PROCESSING_FAILED.
+
+11-23 00:32:22.573 I/SETTLE_SDK(30291): event=stop_requested status=IDLE samples=401 pulseSamples=22 breathingSamples=7 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:32:22.573 I/SETTLE_SDK(30291): event=stop_failed type=SmartSpectraException
+11-23 00:32:22.573 I/SETTLE_SDK(30291): event=stopped status=IDLE samples=401 pulseSamples=22 breathingSamples=7 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:34:26.691 I/SETTLE_SDK(22628): event=status status=IDLE samples=0 pulseSamples=0 breathingSamples=0
+11-23 00:34:26.692 I/SETTLE_SDK(22628): event=initialized sdkVersion=3.4.0 telemetry=false
+11-23 00:34:26.692 I/SETTLE_SDK(22628): event=start_requested preview=true status=STARTING samples=0 pulseSamples=0 breathingSamples=0
+11-23 00:34:30.725 I/SETTLE_SDK(22628): event=status status=RUNNING samples=0 pulseSamples=0 breathingSamples=0
+11-23 00:34:31.286 I/SETTLE_SDK(22628): event=camera_bound source=custom_input requested=640x480 aeFps=[30, 30] analysis=640x480 preview=640x480
+11-23 00:34:31.286 I/SETTLE_SDK(22628): event=start_returned status=RUNNING samples=0 pulseSamples=0 breathingSamples=0
+11-23 00:34:32.610 I/SETTLE_SDK(22628): event=validation code=OK hint="Hold still and record." samples=0
+11-23 00:34:32.626 I/SETTLE_SDK(22628): event=validation code=NO_FACE_FOUND hint="No face found." samples=0
+11-23 00:34:33.327 I/SETTLE_SDK(22628): event=validation code=OK hint="Hold still and record." samples=0
+11-23 00:34:34.250 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=1 pulseSamples=0 breathingSamples=0 lastIssue=NO_FACE_FOUND
+11-23 00:34:37.265 I/SETTLE_SDK(22628): event=fps cameraFps=24.0 frames=121 windowMs=5006 rejected=0 size=480x640
+11-23 00:34:37.467 I/SETTLE_SDK(22628): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=30
+11-23 00:34:37.644 I/SETTLE_SDK(22628): event=validation code=EXCESSIVE_MOTION hint="Hold still - motion may affect accuracy." samples=32
+11-23 00:34:40.813 I/SETTLE_SDK(22628): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=66
+11-23 00:34:42.273 I/SETTLE_SDK(22628): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-23 00:34:45.689 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=100 pulseSamples=0 breathingSamples=0 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:34:47.304 I/SETTLE_SDK(22628): event=fps cameraFps=24.2 frames=122 windowMs=5006 rejected=0 size=480x640
+11-23 00:34:52.308 I/SETTLE_SDK(22628): event=fps cameraFps=24.4 frames=123 windowMs=5006 rejected=0 size=480x640
+11-23 00:34:56.072 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=200 pulseSamples=0 breathingSamples=0 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:34:57.320 I/SETTLE_SDK(22628): event=fps cameraFps=24.7 frames=125 windowMs=5026 rejected=0 size=480x640
+11-23 00:34:58.577 I/SETTLE_SDK(22628): event=validation code=MULTIPLE_FACES_FOUND hint="Only one face is allowed." samples=228
+11-23 00:34:58.849 I/SETTLE_SDK(22628): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=231
+11-23 00:35:02.340 I/SETTLE_SDK(22628): event=fps cameraFps=24.2 frames=122 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:05.154 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=300 pulseSamples=2 breathingSamples=5 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:07.322 I/SETTLE_SDK(22628): event=fps cameraFps=24.6 frames=124 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:12.333 I/SETTLE_SDK(22628): event=fps cameraFps=24.6 frames=124 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:14.563 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=400 pulseSamples=3 breathingSamples=7 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:17.338 I/SETTLE_SDK(22628): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:22.350 I/SETTLE_SDK(22628): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:23.188 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=500 pulseSamples=10 breathingSamples=9 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:27.358 I/SETTLE_SDK(22628): event=fps cameraFps=24.6 frames=124 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:31.421 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=600 pulseSamples=16 breathingSamples=9 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:32.361 I/SETTLE_SDK(22628): event=fps cameraFps=24.6 frames=124 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:37.365 I/SETTLE_SDK(22628): event=fps cameraFps=24.4 frames=123 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:40.140 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=700 pulseSamples=23 breathingSamples=11 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:42.378 I/SETTLE_SDK(22628): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:47.412 I/SETTLE_SDK(22628): event=fps cameraFps=24.0 frames=121 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:48.882 I/SETTLE_SDK(22628): event=metrics status=RUNNING samples=800 pulseSamples=30 breathingSamples=14 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:52.388 I/SETTLE_SDK(22628): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-23 00:35:56.596 I/SETTLE_SDK(22628): event=stop_requested status=RUNNING samples=892 pulseSamples=35 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:56.661 I/SETTLE_SDK(22628): event=status status=STOPPING samples=894 pulseSamples=35 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:56.671 I/SETTLE_SDK(22628): event=validation code=null hint="" samples=894
+11-23 00:35:56.755 I/SETTLE_SDK(22628): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=895
+11-23 00:35:57.996 I/SETTLE_SDK(22628): event=status status=IDLE samples=898 pulseSamples=36 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-23 00:35:58.001 I/SETTLE_SDK(22628): event=stopped status=IDLE samples=898 pulseSamples=36 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW

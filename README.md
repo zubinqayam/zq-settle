@@ -8,8 +8,8 @@ Built for the Presage SmartSpectra SDK challenge (#presagechallenge).
 
 ## Demo
 
-* Demo video: `[DEMO VIDEO LINK – to be added]`
-* Short GIF: `[GIF – to be added]`
+* Demo video (in this repository): [`evidence/video/zq-settle-demo-c55-0034-blurred.mp4`](evidence/video/zq-settle-demo-c55-0034-blurred.mp4) — 1:52, no audio, camera preview blurred for privacy. Recorded on a Realme C55 (Android 15) during a 90 s Guided breathing step. **Live SDK pulse shown, with frame-rate warning** (the camera ran at 24–25 fps); this clip is not by itself a 60-second pass.
+* Online video: `[DEMO VIDEO LINK – to be added]`
 
 ## Requirements
 
@@ -125,7 +125,11 @@ The Android package and class names (`com.zq.commprep`, `CommPrepApp`) are kept 
 
 ## Status
 
-Version `0.2.0-prep2-fpsgate-lowres` (versionCode 8). The camera path holds about 30 fps on the test phone. A sustained live SDK signal on the test phone is **still being verified**; until then, treat the camera check-in as experimental.
+Version `0.2.0-prep2-fpsgate-lowres` (versionCode 8). The camera check-in is an **experimental**, non-medical informational signal. On one test phone (Realme C55, Android 15) a 90 s Guided-breathing run on 22 Nov 2026 kept the SDK running for 88 s with about 66 s of continuous genuine SDK pulse and no crash, with the SDK's frame-rate warning (24.6–25.0 fps). It worked under the recorded conditions; it has not been tested across devices. See [Evidence](#evidence).
+
+## Evidence
+
+Redacted test evidence is in [`evidence/`](evidence/INDEX.md): the C55 test report, SDK event logs (tag `SETTLE_SDK` only), a redacted screenshot, the blurred demo video and start-date evidence. No APKs, keys, device serials or unblurred images are included.
 
 ## Licence
 

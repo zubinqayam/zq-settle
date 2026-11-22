@@ -1,0 +1,131 @@
+# ZQ Settle — C55 run log (redacted)
+# Redacted test evidence, published with Zubin Qayam's approval (23 Nov 2026).
+#
+# Source (file-verified): c55-run-2346.txt (developer laptop)
+#   6,311 bytes, 49 lines, last written 22 Nov 2026 23:48:38 Asia/Muscat
+# Copied 23 Nov 2026, 00:00 Asia/Muscat from a read-only review on the developer laptop.
+# Filter: log tag SETTLE_SDK, process 30291, package com.zq.commprep.
+#
+# Redaction: this capture contained no Presage API key, no key-like tokens, and no device
+# serial. The text below is the complete SETTLE_SDK capture. A key/serial redaction pass
+# was still applied and made no substitutions.
+# No camera frames are included.
+#
+# Session conclusion (see c55-test-report-final.md): exactly one SDK session is present.
+# start_requested 23:47:06.349 → status=RUNNING 23:47:08.285 → stop_requested 23:48:36.337
+# → status=IDLE / event=stopped 23:48:37.695. That interval is the 90 s guided-breathing
+# step (pace 5/5), not a second run.
+
+--------- beginning of main
+11-22 23:47:06.349 I/SETTLE_SDK(30291): event=start_requested preview=true status=STARTING samples=0 pulseSamples=0 breathingSamples=0
+11-22 23:47:08.285 I/SETTLE_SDK(30291): event=status status=RUNNING samples=0 pulseSamples=0 breathingSamples=0
+11-22 23:47:08.370 I/SETTLE_SDK(30291): event=camera_bound source=custom_input requested=640x480 aeFps=[30, 30] analysis=640x480 preview=640x480
+11-22 23:47:08.371 I/SETTLE_SDK(30291): event=start_returned status=RUNNING samples=0 pulseSamples=0 breathingSamples=0
+11-22 23:47:08.884 I/SETTLE_SDK(30291): event=validation code=OK hint="Hold still and record." samples=0
+11-22 23:47:08.900 I/SETTLE_SDK(30291): event=validation code=NO_FACE_FOUND hint="No face found." samples=0
+11-22 23:47:09.119 I/SETTLE_SDK(30291): event=validation code=OK hint="Hold still and record." samples=0
+11-22 23:47:09.561 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1 pulseSamples=0 breathingSamples=0 lastIssue=NO_FACE_FOUND
+11-22 23:47:13.817 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:13.887 I/SETTLE_SDK(30291): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=59
+11-22 23:47:15.665 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=100 pulseSamples=0 breathingSamples=0 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:18.824 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:20.312 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=200 pulseSamples=0 breathingSamples=0 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:23.834 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:25.340 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=300 pulseSamples=0 breathingSamples=0 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:28.860 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:30.143 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=400 pulseSamples=3 breathingSamples=2 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:33.843 I/SETTLE_SDK(30291): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:34.773 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=500 pulseSamples=6 breathingSamples=3 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:38.850 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:39.304 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=600 pulseSamples=10 breathingSamples=4 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:43.859 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:44.069 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=700 pulseSamples=13 breathingSamples=5 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:48.862 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=800 pulseSamples=17 breathingSamples=5 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:48.868 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:53.747 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=900 pulseSamples=21 breathingSamples=5 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:47:53.870 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:58.880 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:47:59.037 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1000 pulseSamples=26 breathingSamples=6 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:03.770 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1100 pulseSamples=30 breathingSamples=9 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:03.886 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:08.669 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1200 pulseSamples=33 breathingSamples=10 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:08.912 I/SETTLE_SDK(30291): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:13.911 I/SETTLE_SDK(30291): event=fps cameraFps=24.6 frames=124 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:14.103 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1300 pulseSamples=37 breathingSamples=11 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:18.903 I/SETTLE_SDK(30291): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:20.174 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1400 pulseSamples=42 breathingSamples=13 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:23.913 I/SETTLE_SDK(30291): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:26.203 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1500 pulseSamples=47 breathingSamples=14 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:28.927 I/SETTLE_SDK(30291): event=fps cameraFps=25.0 frames=126 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:33.921 I/SETTLE_SDK(30291): event=fps cameraFps=24.8 frames=125 windowMs=5006 rejected=0 size=480x640
+11-22 23:48:33.974 I/SETTLE_SDK(30291): event=metrics status=RUNNING samples=1600 pulseSamples=52 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:36.337 I/SETTLE_SDK(30291): event=stop_requested status=RUNNING samples=1639 pulseSamples=54 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:36.410 I/SETTLE_SDK(30291): event=status status=STOPPING samples=1640 pulseSamples=54 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:36.424 I/SETTLE_SDK(30291): event=validation code=null hint="" samples=1640
+11-22 23:48:36.441 I/SETTLE_SDK(30291): event=validation code=FRAME_RATE_TOO_LOW hint="Use a camera mode that provides at least 25 frames per second." samples=1641
+11-22 23:48:37.693 I/SETTLE_SDK(30291): event=status status=IDLE samples=1645 pulseSamples=55 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+11-22 23:48:37.695 I/SETTLE_SDK(30291): event=stopped status=IDLE samples=1645 pulseSamples=55 breathingSamples=17 lastIssue=FRAME_RATE_TOO_LOW
+
+# ---- Battery temperature samples (file-verified) ----
+# Source: therm-1934.txt (developer laptop)
+# Sampler: poco-diag\therm.ps1 — every 5 s, `adb shell dumpsys battery` lines matching
+# level|temperature. The integer is the battery service `temperature` field in tenths of
+# a degree Celsius (407 = 40.7 °C). Device serial is not present in this file.
+# c55-therm-2346.txt existed but was empty (0 bytes); these 23:46+ rows are the C55 series.
+# Earlier 19:34–19:37 rows in the same file are the Poco session and are omitted here.
+#
+# 23:46:26   level: 69   : 414
+# 23:46:31   level: 69   : 413
+# 23:46:36   level: 69   : 412
+# 23:46:42   level: 69   : 412
+# 23:46:47   level: 69   : 412
+# 23:46:52   level: 69   : 411
+# 23:46:57   level: 69   : 410
+# 23:47:02   level: 69   : 410
+# 23:47:07   level: 69   : 409
+# 23:47:13   level: 69   : 409
+# 23:47:18   level: 69   : 407
+# 23:47:23   level: 69   : 408
+# 23:47:28   level: 69   : 407
+# 23:47:33   level: 69   : 409
+# 23:47:38   level: 69   : 411
+# 23:47:43   level: 69   : 412
+# 23:47:49   level: 69   : 411
+# 23:47:54   level: 69   : 416
+# 23:47:59   level: 69   : 418
+# 23:48:04   level: 69   : 418
+# 23:48:09   level: 69   : 418
+# 23:48:14   level: 69   : 422
+# 23:48:19   level: 69   : 421
+# 23:48:25   level: 69   : 427
+# 23:48:30   level: 69   : 427
+# 23:48:35   level: 69   : 426
+# 23:48:40   level: 69   : 427
+# 23:48:45   level: 69   : 431
+# 23:48:50   level: 69   : 430
+# 23:48:55   level: 69   : 430
+# 23:49:01   level: 69   : 430
+# 23:49:06   level: 69   : 431
+# 23:49:11   level: 69   : 432
+# 23:49:16   level: 69   : 431
+# 23:49:21   level: 69   : 429
+
+# ---- Read-only follow-up on the same C55, 22 Nov 2026 23:54 Asia/Muscat (device-verified) ----
+# adb logcat -d (not cleared). The 256 KiB main buffer no longer held any SETTLE_SDK lines
+# (0 hits for tag SETTLE_SDK). Crash buffer: 0 hits for com.zq.commprep / SETTLE / FATAL.
+# Process 30291 was still alive. The app had been sent to the background at 23:48:46, after
+# the SDK session ended. No second start_requested was found. Selected lines only (unrelated
+# apps on the recents list omitted; no serials):
+#
+# 11-22 23:48:13.513  input_cancel: MainActivity (reason=input channel stole pointer stream)
+# 11-22 23:48:15.209  input_focus: Focus leaving MainActivity (Waiting for window because NOT_VISIBLE)
+# 11-22 23:48:20.696  input_focus: Focus entering MainActivity (setFocusedWindow)
+# 11-22 23:48:46.267  OplusAppSwitchListener: Detect com.zq.commprep switch to background
+# 11-22 23:48:46.212  wm_on_paused_called: com.zq.commprep.MainActivity
+# 11-22 23:48:47.374  wm_on_stop_called: com.zq.commprep.MainActivity
+# 11-22 23:49:34.108  am_pss: pid 30291, com.zq.commprep (process still alive)
+#
+# A private DataStore history file and a short SmartSpectra glog were listed via
+# `adb shell run-as com.zq.commprep` (debuggable build). Those contents are summarised in
+# the test report. The file shared_prefs/presage_emd_secure_storage.xml was listed and
+# was not opened or copied.
