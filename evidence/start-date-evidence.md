@@ -41,8 +41,8 @@ That start is **5 Nov 2026, 02:00 Asia/Muscat**.
 ## Start-date confirmation (Zubin Qayam, 23 Nov 2026)
 
 - No development of ZQ Settle took place before the Entry Period opened (4 Nov 2026 2:00 PM PST = 5 Nov 2026 02:00 Asia/Muscat).
-- Earliest dated record: SETTLE planning document dated 13 Nov 2026. Code work on ZQ Settle began on or after 14 Nov 2026, with most work concentrated in the following days.
+- Development start date: **14 November 2026** (Asia/Muscat). Verified local evidence: three self-sent emails with Protocol v2 and its test checklist on 14 Nov 2026, 01:08–02:21 (email headers verify); first local git commit `1b226a1` "Comm Prep Android scaffold (Protocol v2)" on 14 Nov 2026, 08:53; ten more local commits through 16 Nov 2026. Earliest project record: planning document created 13 Nov 2026, 08:20.
 - The earlier 'version 1 protocol' (60 s quiet baseline, 90 s guided breathing, 30 s rehearsal; replaced by Protocol v2 on 14 Nov) has no dated copy. Zubin does not recall when it was written or whether it was a general idea or work on this app; its date and nature are recorded as unknown.
-- Git dates can be rewritten; the public history begins with the 22 Nov publication commit, so the dated planning record and this statement are the basis for the start date.
+- GitHub history only begins on 16 Nov 2026 because the private working repository was created then and the 14 Nov local history was replayed into it; the public history begins with the 22 Nov publication commit. Git dates can be rewritten, so the email headers, the dated planning record and this statement are the basis for the start date.
 
 **Status:** Confirmed by Zubin Qayam, 23 Nov 2026 (v1 protocol date unknown, see start-date-evidence.md). This is not legal advice.
