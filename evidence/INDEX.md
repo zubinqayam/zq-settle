@@ -21,7 +21,7 @@ Labels: **file-verified** (checked in log files), **device-verified** (read from
 | [c55-run-2347-screen-redacted.jpg](c55-run-2347-screen-redacted.jpg) | Mid-run screenshot of the 23:47 run (Guided breathing, "Camera check-in running.", pulse estimate 54 bpm with the frame-rate warning). Camera preview covered for privacy | reported (screenshot) |
 | [c55-run-0034-log-redacted.txt](c55-run-0034-log-redacted.txt) | SDK event log (tag `SETTLE_SDK` only) for the 23 Nov 00:34 Guided-breathing run shown in the demo video | file-verified |
 | [video/zq-settle-demo-c55-0034-blurred.mp4](video/zq-settle-demo-c55-0034-blurred.mp4) | Demo video of the 00:34 run: 1:52, H.264 720×1600, no audio. Camera preview (person and background) blurred; app text, pulse line, warnings and breathing guide unblurred. **Live SDK pulse shown, with frame-rate warning — not a 60-second pass.** | reported (screen recording); redaction checked |
-| [start-date-evidence.md](start-date-evidence.md) | Redacted start-date evidence: earliest work 13 Nov 2026, first code commit 14 Nov 2026; Entry Period opened 5 Nov 2026, 02:00 | file-verified; Zubin's confirmation pending |
+| [start-date-evidence.md](start-date-evidence.md) | Redacted start-date evidence: earliest work 13 Nov 2026, first code commit 14 Nov 2026; Entry Period opened 5 Nov 2026, 02:00 | file-verified; Confirmed by Zubin Qayam, 23 Nov 2026 (v1 protocol date unknown, see start-date-evidence.md) |
 
 ## Summary of results
 

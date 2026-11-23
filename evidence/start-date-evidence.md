@@ -38,4 +38,11 @@ That start is **5 Nov 2026, 02:00 Asia/Muscat**.
 2. Git author dates can be rewritten. The strongest independent timestamps are document `createdTime` values (13 Nov), email server headers (14 and 16 Nov) and the GitHub repository creation time (16 Nov).
 3. The check covered the connected GitHub account, Google Drive, email and the build machine. It cannot prove that nothing existed elsewhere.
 
-**Status:** pending Zubin Qayam's personal confirmation. This is not legal advice.
+## Start-date confirmation (Zubin Qayam, 23 Nov 2026)
+
+- No development of ZQ Settle took place before the Entry Period opened (4 Nov 2026 2:00 PM PST = 5 Nov 2026 02:00 Asia/Muscat).
+- Earliest dated record: SETTLE planning document dated 13 Nov 2026. Code work on ZQ Settle began on or after 14 Nov 2026, with most work concentrated in the following days.
+- The earlier 'version 1 protocol' (60 s quiet baseline, 90 s guided breathing, 30 s rehearsal; replaced by Protocol v2 on 14 Nov) has no dated copy. Zubin does not recall when it was written or whether it was a general idea or work on this app; its date and nature are recorded as unknown.
+- Git dates can be rewritten; the public history begins with the 22 Nov publication commit, so the dated planning record and this statement are the basis for the start date.
+
+**Status:** Confirmed by Zubin Qayam, 23 Nov 2026 (v1 protocol date unknown, see start-date-evidence.md). This is not legal advice.
