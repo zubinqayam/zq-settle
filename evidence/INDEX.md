@@ -25,9 +25,9 @@ Labels: **file-verified** (checked in log files), **device-verified** (read from
 
 ## Summary of results
 
-| Run | Step | SDK RUNNING | Genuine SDK pulse | Warnings | 60 s bar |
+| Run | Step | SDK RUNNING | Genuine SDK pulse | Warnings | Internal 60 s QA check |
 |---|---|---|---|---|---|
-| 22 Nov 23:47:08–23:48:36 | Guided breathing, 90 s, pace 5/5 | 88 s | ~66 s continuous (first pulse 23:47:30) | FRAME_RATE_TOO_LOW (fps 24.6–25.0); one brief early NO_FACE_FOUND | **PASS** (log-verified). No video of this run exists; evidence is the log and the redacted screenshot |
+| 22 Nov 23:47:08–23:48:36 | Guided breathing, 90 s, pace 5/5 | 88 s | ~66 s continuous (first pulse 23:47:30) | FRAME_RATE_TOO_LOW (fps 24.6–25.0); one brief early NO_FACE_FOUND | **PASS** (meets internal 60 s QA check, log-verified). No video of this run exists; evidence is the log and the redacted screenshot |
 | 23 Nov 00:29 | Quiet baseline, 60 s | log not captured | ~24 s on screen, erratic 40–88 bpm | under-25-fps warning; face often out of frame | FAIL |
 | 23 Nov 00:34:30–00:35:56 | Guided breathing, 90 s, pace 5/5 | 86 s | ~56 s by log (first pulse about 00:35:00); on screen intermittent, then steady for the last ~25 s (60, 72, 82, 75, 65, 54, 58, 55, 56 bpm) | FRAME_RATE_TOO_LOW throughout (fps 24.0–25.0); early NO_FACE_FOUND, EXCESSIVE_MOTION, one MULTIPLE_FACES_FOUND | FAIL on its own; used as the demo video |
 

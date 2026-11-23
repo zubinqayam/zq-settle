@@ -4,9 +4,11 @@
 
 Written 23 Nov 2026, 00:00 Asia/Muscat, from a read-only review of the 22 Nov 2026 C55 run. Labels: **device-verified** / **file-verified** / **reported** / **pending**.
 
+Revised 23 Nov 2026, 04:03 Asia/Muscat: wording clarification only. The 00:29 and 00:34 runs were added after the original 00:00 review. The 60-second threshold used in this report is Zubin Qayam's internal QA bar, not a contest rule.
+
 ## Verdict in one paragraph
 
-There was **one** SmartSpectra SDK session on the C55, not two. The guided-breathing screen in screenshot `1004113800.jpg` (clock 23:4x, "Pace 5/5 · 22 s left", pulse 54 bpm) is mid-run of that same session. `start_requested` at 23:47:06.349 to `stop_requested` at 23:48:36.337 is 89.988 s, which matches the app's 90 s guided-breathing step at pace 5/5. SDK `RUNNING` lasted 88.052 s (23:47:08.285–23:48:36.337). Continuous genuine SDK pulse ran for 66.194 s (first logged `pulseSamples>0` at 23:47:30.143 through `stop_requested`). No crash, `NETWORK_ERROR` or `PROCESSING_FAILED`. The on-screen wording was "Camera check-in running." with a fresh pulse estimate, not the timer fallback. Against the criterion "at least 60 s of genuine SDK signal, not the timer fallback, with no crash", **Stage 1 PASSES**, with `FRAME_RATE_TOO_LOW` recorded as a **warning, not a fail**. Stage 2 is not a separate measurement; it is the same session viewed mid-run, so it does not get a second independent pass.
+There was **one** SmartSpectra SDK session on the C55, not two. The guided-breathing screen in screenshot `1004113800.jpg` (clock 23:4x, "Pace 5/5 · 22 s left", pulse 54 bpm) is mid-run of that same session. `start_requested` at 23:47:06.349 to `stop_requested` at 23:48:36.337 is 89.988 s, which matches the app's 90 s guided-breathing step at pace 5/5. SDK `RUNNING` lasted 88.052 s (23:47:08.285–23:48:36.337). Continuous genuine SDK pulse ran for 66.194 s (first logged `pulseSamples>0` at 23:47:30.143 through `stop_requested`). No crash, `NETWORK_ERROR` or `PROCESSING_FAILED`. The on-screen wording was "Camera check-in running." with a fresh pulse estimate, not the timer fallback. Against the criterion "at least 60 s of genuine SDK signal, not the timer fallback, with no crash", the run meets our internal 60-second QA bar, with `FRAME_RATE_TOO_LOW` recorded as a **warning, not a fail**. Stage 2 is not a separate measurement; it is the same session viewed mid-run, so it does not get a second independent pass.
 
 ## Device and build
 

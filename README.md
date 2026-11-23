@@ -8,8 +8,8 @@ Built for the Presage SmartSpectra SDK challenge (#presagechallenge).
 
 ## Demo
 
-* Demo video (in this repository): [`evidence/video/zq-settle-demo-c55-0034-blurred.mp4`](evidence/video/zq-settle-demo-c55-0034-blurred.mp4) — 1:52, no audio, camera preview blurred for privacy. Recorded on a Realme C55 (Android 15) during a 90 s Guided breathing step. **Live SDK pulse shown, with frame-rate warning** (the camera ran at 24–25 fps); this clip is not by itself a 60-second pass.
-* Online video: `[DEMO VIDEO LINK – to be added]`
+* Demo video (in this repository): [`evidence/video/zq-settle-demo-c55-0034-blurred.mp4`](evidence/video/zq-settle-demo-c55-0034-blurred.mp4) — 1:52, no audio, camera preview blurred for privacy. Recorded on a Realme C55 (Android 15) during a 90 s Guided breathing step. **Live SDK pulse shown, with frame-rate warning** (the camera ran at 24–25 fps); this clip does not meet our internal 60-second continuous-pulse QA check.
+* Online video: [https://github.com/zubinqayam/zq-settle/blob/main/evidence/video/zq-settle-demo-c55-0034-blurred.mp4](https://github.com/zubinqayam/zq-settle/blob/main/evidence/video/zq-settle-demo-c55-0034-blurred.mp4)
 
 ## Requirements
 
